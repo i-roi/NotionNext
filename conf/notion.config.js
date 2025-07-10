@@ -35,5 +35,4 @@ module.exports = {
   },
   NOTION_ACTIVE_USER: process.env.NOTION_ACTIVE_USER || '',
   NOTION_TOKEN_V2: process.env.NOTION_TOKEN_V2 || '', // Useful if you prefer not to make your database public
-  THEME_SWITCH: process.env.NEXT_PUBLIC_THEME_SWITCH || true // 是否显示切换主题按钮
 }
