@@ -42,7 +42,7 @@ module.exports = {
       url: 'https://ws6.stream.qqmusic.qq.com/O400002ijjoA3xcRi1.ogg?guid=7278107368&vkey=CF6FE52AB0DE12BA199CCFD2BC51B03953C99A5E05D0FAFFF6FA516344576ADBA475979975F7F0F930B6596F36A8B0A468DC7909F7CA8B48__v2b9aaf6a&uin=2538996472&fromtag=120532',
       cover:
         'https://y.qq.com/music/photo_new/T062R300x300M000003z8eSa0bKfBJ.jpg?max_age=2592000',
-      lrc: './public/Somebody Else-MusicEnc.lrc'
+      lrc: '../public/Somebody Else-MusicEnc.lrc'
     }
   ],
   MUSIC_PLAYER_METING: process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING || false, // 是否要开启 MetingJS，从平台获取歌单。会覆盖自定义的 MUSIC_PLAYER_AUDIO_LIST，更多配置信息：https://github.com/metowolf/MetingJS
