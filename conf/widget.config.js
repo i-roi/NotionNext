@@ -29,7 +29,7 @@ module.exports = {
   MUSIC_PLAYER_VISIBLE: process.env.NEXT_PUBLIC_MUSIC_PLAYER_VISIBLE || true, // 是否在左下角显示播放和切换，如果使用播放器，打开自动播放再隐藏，就会以类似背景音乐的方式播放，无法取消和暂停
   MUSIC_PLAYER_AUTO_PLAY:
     process.env.NEXT_PUBLIC_MUSIC_PLAYER_AUTO_PLAY || true, // 是否自动播放，不过自动播放时常不生效（移动设备不支持自动播放）
-  MUSIC_PLAYER_LRC_TYPE: process.env.NEXT_PUBLIC_MUSIC_PLAYER_LRC_TYPE || '3', // 歌词显示类型，可选值： 3 | 1 | 0（0：禁用 lrc 歌词，1：lrc 格式的字符串，3：lrc 文件 url）（前提是有配置歌词路径，对 meting 无效）
+  MUSIC_PLAYER_LRC_TYPE: process.env.NEXT_PUBLIC_MUSIC_PLAYER_LRC_TYPE || '1', // 歌词显示类型，可选值： 3 | 1 | 0（0：禁用 lrc 歌词，1：lrc 格式的字符串，3：lrc 文件 url）（前提是有配置歌词路径，对 meting 无效）
   MUSIC_PLAYER_CDN_URL:
     process.env.NEXT_PUBLIC_MUSIC_PLAYER_CDN_URL ||
     'https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js',
@@ -42,7 +42,63 @@ module.exports = {
       url: 'https://ws6.stream.qqmusic.qq.com/O400002ijjoA3xcRi1.ogg?guid=7278107368&vkey=CF6FE52AB0DE12BA199CCFD2BC51B03953C99A5E05D0FAFFF6FA516344576ADBA475979975F7F0F930B6596F36A8B0A468DC7909F7CA8B48__v2b9aaf6a&uin=2538996472&fromtag=120532',
       cover:
         'https://y.qq.com/music/photo_new/T062R300x300M000003z8eSa0bKfBJ.jpg?max_age=2592000',
-      lrc: 'https://github.com/i-roi/NotionNext/blob/main/public/Somebody%20Else-MusicEnc.lrc'
+      lrc: '[00:00.000]LRC-toomic.com
+[00:00]Somebody Else (别人) - Ebony Day
+[00:00]//
+[00:00]So you said you've found somebody else
+[00:06]你说你已有了新欢
+[00:08]And I prayed that that was just a lie
+[00:16]我多希望这只是你的谎言
+[00:17]So I said I loved you one more time
+[00:21]因此我说 我爱你 再给我一次机会吧
+[00:22]In case that would change your mind
+[00:25]也许你就会改变心意
+[00:28]You said I don't want your body
+[00:31]你说 我对你没感觉
+[00:31]But I know that you can find yourself somebody else
+[00:35]但我知道 你一定会找到你的命中注定
+[00:37]Our love has gone cold
+[00:40]我们的爱就这样凋零
+[00:40]And it doesn't feel like home when I hold you close
+[00:44]即使与你紧紧相拥 我也感觉不到任何温暖
+[00:47]And I'm lookin' at you tryna figure out if this is what you really want
+[00:53]我凝视着你的双眸 试图弄清这是否就是你要的结局
+[00:55]You said I don't want your body
+[00:58]你说 我对你没感觉
+[00:58]But I know that you can find yourself somebody else
+[01:02]但我知道 你一定会找到你的命中注定
+[01:04]I guess I don't want your body
+[01:07]我想 我也许并不爱你
+[01:07]If you're wishing you were lying here with someone else
+[01:11]因为你总是想要逃离 想要和别人在一起
+[01:14]So you said you've found somebody else
+[01:20]你说你已有了新欢
+[01:22]And I hoped that this wasn't goodbye
+[01:30]我多希望这不是诀别
+[01:30]But I can't help but wonder what went wrong
+[01:34]但我力不从心 我想知道究竟是哪里出了错
+[01:35]To make forever dead and gone
+[01:38]为何我们的爱再也无法挽回
+[01:42]You said I don't want your body
+[01:44]你说 我对你没感觉
+[01:44]But I know that you can find yourself somebody else
+[01:49]但我知道 你一定会找到你的命中注定
+[01:51]Your love has gone cold
+[01:53]你的激情早已消散
+[01:53]And it doesn't feel like home when I hold you close
+[01:58]即使与你紧紧相拥 我也感觉不到任何温暖
+[02:00]And I'm lookin' at you tryna figure out if this is what you really want
+[02:07]我凝视着你的双眸 试图弄清这是否就是你要的结局
+[02:09]You said I don't want your body
+[02:11]你说 我对你没感觉
+[02:11]But I know that you can find yourself somebody else
+[02:15]但我知道 你一定会找到你的命中注定
+[02:18]You said I don't want your body
+[02:20]你说 我对你没感觉
+[02:20]But I know that you can find yourself somebody else
+[02:25]但我知道 你一定会找到你的命中注定
+[02:26]I guess I don't want your body
+[02:26]我想 我也许并不爱你'
     }
   ],
   MUSIC_PLAYER_METING: process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING || false, // 是否要开启 MetingJS，从平台获取歌单。会覆盖自定义的 MUSIC_PLAYER_AUDIO_LIST，更多配置信息：https://github.com/metowolf/MetingJS
